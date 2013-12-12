@@ -195,9 +195,6 @@ function getQueryVariable()
 			addMargins();
 			addImages();
        }
-
-              console.log (vars.length);
-
 }
 
 getQueryVariable();
