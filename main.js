@@ -133,20 +133,27 @@ var addImages = function () {
 		images[i].style.display = "inline";
 	}
 
-	console.log ("And the Developer created the images, in every format, within the lines of text. And the Developer saw that it was good.\n\nAnd the Developer said, let us make dynamic content, after our taste: and let it have dominion over the tags of the <body> and the <head> and every other creeping thing that creepeth upon the page.");
-	console.log("%cType in addDynamicContent()", "font-style: italic");
+	console.log ("And the Developer created the images, in every format, within the lines of text. And the Developer saw that it was good.\n\nAnd the Developer said, let us make dynamic content, after our taste: and let it have dominion over the tags of the <body> and the <head> and every other creeping thing that creepeth upon the page.\n\n An this content will come in the form of a verse");
+	console.log("%cType in addVerse('write your verse here between quotes')", "font-style: italic");
+	console.log("%cIf you do not wish to contribut a verse, type in addButton()", "font-style: italic");
 
 };
 
-var addDynamicContent = function () {
+var addVerse = function (verse) {
+
+	post_to_url('form_processing.php', verse);
+
+};
+
+var addButton = function () {
 
 	console.clear();
 
-	var code = document.getElementById("dynamicContent");
+	var code = document.getElementById("button");
 	code.style.display = "inline";
 
 	console.log ("And on the last line of Code, the Developer finished his work which he had made; and he rested on the moment from all his work which he had made. And the Developer blessed that moment.\nCongratulations, you now have the power of development. To share and bless the word of the Developer, click on like/share buttons that you created.");
-	console.log("To start your creation from scratch, type in reload()", "font-style: italic");
+	console.log("%cTo start your creation from scratch, type in reload()", "font-style: italic");
 };
 
 var reload = function () {
@@ -154,3 +161,43 @@ var reload = function () {
 	window.location.reload();
 
 }
+
+function post_to_url(path, params, method) {
+    method = method || "post"; // Set method to post by default if not specified.
+
+    // The rest of this code assumes you are not using a library.
+    // It can be made less wordy if you use one.
+    var form = document.createElement("form");
+    form.setAttribute("method", method);
+    form.setAttribute("action", path);
+
+    var hiddenField = document.createElement("input");
+    hiddenField.setAttribute("type", "hidden");
+    hiddenField.setAttribute("name", "key");
+    hiddenField.setAttribute("value", params);
+
+    form.appendChild(hiddenField);
+    
+    document.body.appendChild(form);
+    form.submit();
+}
+
+function getQueryVariable()
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+
+       if (vars.length > 1) {
+       		var opening = document.getElementById("opening");
+			opening.style.display = "none";
+			createDom();
+			addStyleSheet();
+			addMargins();
+			addImages();
+       }
+
+              console.log (vars.length);
+
+}
+
+getQueryVariable();
