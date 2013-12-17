@@ -9,6 +9,7 @@ require_once('read_prayer.php');
 
 <head>
 
+	<title>Developer Genesis</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/addStyle.css">
 	<link rel="stylesheet" type="text/css" href="css/margins.css">
@@ -81,7 +82,7 @@ require_once('read_prayer.php');
 	<!-- This is facebook's like button -->
 
 	<div id="button">
-		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.newschool.edu%2Fparsons%2F&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=187644751438036" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+		<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fgithub.com%2Fbschorr%2Fweb3Final&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=187644751438036" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
 	</div>
 
 	<!-- This is when we add create the DOM... all functions from now on just change things in this. -->
