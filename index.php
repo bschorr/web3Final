@@ -9,9 +9,12 @@ require_once('read_prayer.php');
 
 <head>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="addStyle.css">
-	<link rel="stylesheet" type="text/css" href="margins.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/addStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/margins.css">
+	
+		<link href='http://fonts.googleapis.com/css?family=Dosis:200,400,700' rel='stylesheet' type='text/css'>
+
 
 </head>
 
@@ -30,66 +33,72 @@ require_once('read_prayer.php');
 
 	<!-- This is when content is created. -->
 	<div id="content">
-			The Web Developer's Prayer
+			The Web Developer's Prayer</br></br>
 			<?php read_prayer('','<br/>')?>
 	</div>
 
 	<!-- This is when elements are created -->
 	<div id="elements">
 		&lt;html&gt;<br/>
-		&lt;head&gt;<br/>
-		&lt;/head&gt;<br/>
-		&lt;body&gt;<br/>
-		The Web Developer's Prayer<br/>
-		<?php read_prayer('','<br/>')?>
-		&lt;/body&gt;<br/>
+		  &lt;head&gt;<br/>
+		  &lt;/head&gt;<br/>
+		  &lt;body&gt;<br/>
+		   The Web Developer's Prayer<br/></br>
+		   <?php read_prayer('','<br/>')?>
+		  &lt;/body&gt;<br/>
 		&lt;/html&gt;<br/>
 	</div>
 
 	<!-- This is when we divide the body in tags -->
 	<div id="divideBody">
-		&lt;html&gt;<br/>
+		<h2>&lt;html&gt;<br/>
 		&lt;head&gt;<br/>
 		&lt;/head&gt;<br/>
-		&lt;body&gt;<br/>
-		&lt;h1&gt;The Web Developer's Prayer&lt;/h1&gt;<br/>
-		&lt;p&gt;<?php read_prayer('', '&lt;br/&gt;<br/>')?>&lt;/p&gt;<br/>
-		&lt;/body&gt;<br/>
-		&lt;/html&gt;<br/>
+		&lt;body&gt;<br/></h2>
+		<h1>&lt;h1&gt;The Web Developer's Prayer&lt;/h1&gt;<br/></h1>
+		<p>&lt;p&gt;<?php read_prayer('', '&lt;br/&gt;<br/>')?>&lt;/p&gt;<br/></p>
+		<h2>&lt;/body&gt;<br/>
+		&lt;/html&gt;<br/></h2>
 	</div>
 
 	<!-- This is when we add elements to the head and indentation -->
 	<div id="addElements">
 		
-		&lt;html&gt;<br/>
+		<h2>&lt;html&gt;<br/>
 		&nbsp;&nbsp;&nbsp;&nbsp; &lt;head&gt;<br/>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;May development be blessed&lt;/title&gt;<br/>
 		&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br/>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br/>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;The Web Developer's Prayer&lt;/h1&gt;<br/>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;</br
-		<?php read_prayer('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;','&lt;br/&gt;<br/>')?>
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br/></h2>
+		<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;The Web Developer's Prayer&lt;/h1&gt;</h1><br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;</br>
+		<p><?php read_prayer('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;','&lt;br/&gt;<br/>')?></p>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p&gt;<br/>
-		&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br/>
-		&lt;/html&gt;<br/>
+		<h2>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br/>
+		&lt;/html&gt;<br/></h2>
 
+	</div>
+
+	<!-- This is facebook's like button -->
+
+	<div id="button">
+		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.newschool.edu%2Fparsons%2F&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=187644751438036" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
 	</div>
 
 	<!-- This is when we add create the DOM... all functions from now on just change things in this. -->
 	<div id="createDom">
 		<h1>The Web Developer's Prayer</h1>
-		<img src="http://www.supernaturalwiki.com/images/7/7c/God-02.jpg">
-		<p>
-			<?php read_prayer('','<br/>')?>			
-		</p>
+		<div id = "godAndVerses">
+			<img id="god" src="img/god.jpg">
+			<div id="verses">
+					<?php read_prayer('','<br/>')?>
+					<strong>Refresh.</strong>			
+			</div>
+		</div>
 	</div>
 
-	<!-- This is facebook's like button -->
-	<div id="button">
-		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.bernardoschorr.com&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=187644751438036" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true" id = "dynamicContent"></iframe>
-	<div>
 
-	<script type="text/javascript" src="main.js"></script>
+
+	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 

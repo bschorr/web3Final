@@ -1,5 +1,5 @@
 <?php
-	function read_prayer($start, $break, $filename = "prayer.txt") {
+	function read_prayer($start, $break, $filename = "img/prayer.txt") {
 		
 		$txt_file = file_get_contents($filename);
 		$rows = explode("\n", $txt_file);

@@ -7,8 +7,8 @@
 
 	$verse = isset($_POST["key"]) ? $_POST["key"] : "";
 		//echo $verse;
-	file_put_contents("prayer.txt", "\r\n", FILE_APPEND);
-	file_put_contents("prayer.txt", $verse, FILE_APPEND);
+	file_put_contents("img/prayer.txt", "\r\n", FILE_APPEND);
+	file_put_contents("img/prayer.txt", $verse, FILE_APPEND);
 
 	header("Location: index.php?updated&readyToGo");
 ?>

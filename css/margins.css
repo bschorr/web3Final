@@ -1,0 +1,48 @@
+h1 {
+	text-align: center;
+}
+
+#verses{
+	margin: 0 auto;
+	float: left;
+	width:300px;
+}
+
+#god{
+	margin: 0 auto;
+	float: left;
+	width: 300px;
+}
+
+#godAndVerses{
+	display: table;
+	margin: 0 auto;
+}
+
+#content {
+	display: none;
+}
+
+#elements {
+	display:none;
+}
+
+#divideBody {
+	display:none;
+}
+
+#addElements {
+	display:none;
+}
+
+#button {
+	display: none;
+	margin: 0 auto;
+	height: 8px;
+	position: absolute;
+	z-index: 3;
+}
+
+iframe {
+	height: 10px;
+}
