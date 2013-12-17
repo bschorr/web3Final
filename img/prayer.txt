@@ -13,7 +13,3 @@ and the business logic
 Looping forever and ever.
 in Java and C++.
 And in programming and scripts
-my verse
-my verse 2
-my verse 4
-blashhhhh
